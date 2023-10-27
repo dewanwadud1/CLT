@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 0;
+  padding: 20px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+header h1 {
+  margin: 0;
+  padding: 20px 20px 10px 20px;
+  font-size: 2.8em;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.4em;
+}
+
+main {
+  margin: 20px 10px;
+  padding: 0;
+}
+
+section {
+  /*width: 95%;*/
+  margin: 20px auto;
+  border: 2px solid black;
+}
+
+section canvas {
+  margin: 0px;
+  padding: 0px;
+}
+
+section form {
+  margin: 10px auto;
+  padding: 10px 20px;
+}
+
+section div {
+  margin: 10px auto;
+  width: 90%;
+}
+
+section ul {
+  list-style-type: square;
+  font-family: 'Balsamiq Sans', cursive;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /*display: inline-block;*/
+  padding: 20px;
+  background-color: tomato;
+}
+
+ul li {
+  margin: 5px;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #e8e6e1;
+}
+
+footer p {
+  margin: 0;
+  padding: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+  header h1 {
+    font-size: 5.0em;
+  }
+  
+  header p {
+    font-size: 1.7em;
+  }
+
+  section {
+    width: 70%;
+    margin: 10px auto;
+  }
+} 

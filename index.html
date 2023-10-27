@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js'></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Central Limit Theorem</h1>
+      <p>Explanation and Visualization</p>
+    </header>
+    <main id="main">
+      <section>
+        <form>
+          <select id="dist1">
+            <option selected>Uniform</option>
+            <option>Normal</option>
+            <option>Negatively skewed</option>
+            <option>Positively skewed</option>
+          </select>
+          <button type="button" onclick="populationStat = createPopulationAndDraw();">Generate</button>
+        </form>
+        <canvas id="histogram1"></canvas>
+        <div id="data1"></div>
+      </section>
+      <section>
+        <form>
+          <select id="sample-size1">
+            <option selected>10</option>
+            <option>50</option>
+            <option>100</option>
+            <option>200</option>
+            <option>500</option>
+          </select>
+          <button type="button" onclick="sampleStat = selectSampleAndDraw(populationStat[0]);">Select Sample</button>
+        </form>
+        <canvas id="histogram2"></canvas>
+        <div id="data2"></div>
+      </section>
+      <section>
+        <form>
+          <select id="sample-size2">
+            <option selected>10</option>
+            <option>50</option>
+            <option>100</option>
+            <option>200</option>
+            <option>500</option>
+          </select>
+          <select id="samples">
+            <option selected>1000</option>
+            <option>5000</option>
+            <option>10000</option>
+            <option>20000</option>
+          </select>
+          <button type="button" onclick="sampleDistStat = sampleDistAndDraw(populationStat[0]);">Generate</button>
+        </form>
+        <canvas id="histogram3"></canvas>
+        <div id="data3"></div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; copyright Vikas Choudhary 2021</p>
+    </footer>
+    <script>
+      populationStat = createPopulationAndDraw();
+    </script>
+  </body>
+</html>
