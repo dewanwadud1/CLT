@@ -1,5 +1,3 @@
 # CLT
 
-I developed this tool when I was working as a Research Assistant of Professor Anas Basalamah in 2020. Prof. Anas was teaching statistics to a bunch of engineering undergraduate students at that time. Later, I assisted him to publish a pedagogical learning based research article on this concept. 
-
-The paper can be found at -> https://thesai.org/Downloads/Volume12No5/Paper_94-An_Interactive_Tool_for_Teaching_the_Central_Limit_Theorem.pdf 
+This is an interactive tool for learning the concept of Central Limit Theorem through simulation. I developed the early version back in 2020 while working as a Research Assistant of Professor Anas Basalamah, and currently upgrading it while working as a TA of Professor Nima Afraz in 2023.
